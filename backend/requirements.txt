@@ -1,0 +1,27 @@
+# Web framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# Multipart file uploads (FastAPI's UploadFile needs this)
+python-multipart==0.0.9
+
+# Jinja2 templating for the public /talk/<token> landing page
+jinja2==3.1.4
+
+# Database (ORM)
+sqlalchemy==2.0.34
+
+# Vapi (voice AI platform) is used via REST — no SDK needed.
+requests==2.32.3
+
+# Groq LLM SDK — used by our backend for post-call extraction + summaries.
+# (Vapi is also configured to use Groq for the live conversation.)
+# 0.11.0 is incompatible with httpx>=0.28; 0.13+ fixes the "proxies" kwarg error.
+groq>=0.20.0,<1.0.0
+
+# Environment variable loader
+python-dotenv==1.0.1
+
+# File processing (CSV / XLSX)
+pandas==2.2.2
+openpyxl==3.1.5

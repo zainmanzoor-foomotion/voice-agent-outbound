@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Backend app data
+backend/database/app.db
+backend/database/*.db
+backend/uploads/*
+!backend/uploads/.gitkeep
+.env
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
